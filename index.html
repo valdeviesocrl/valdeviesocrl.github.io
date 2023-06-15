@@ -98,12 +98,24 @@
             <h1 class="text-uppercase fw-bold">I am Carol Villareal</h1>
             <h5 class="text-uppercase">junior frontend web developer</h5>
             <div class="mt-5">
-              <a class="main-btn btn btn-primary text-uppercase" href="#"
-                >Hire Me</a
+              <button
+                type="button"
+                class="hire-me main-btn btn btn-primary text-uppercase"
+                id="hire_me"
               >
+                Hire Me
+              </button>
+              <div class="pop-up" id="popup">
+                <h2>Thank You!</h2>
+                <p>
+                  I will do my best to meet your satisfaction <br />
+                  Have a good day!
+                </p>
+                <button type="button" id="okbtn">OK</button>
+              </div>
               <a
                 href="Contact.html"
-                class="main-btn btn btn-outline-dark ms-4 text-white border-2 text-uppercase"
+                class="contact-me main-btn btn btn-outline-dark ms-4 text-white border-2 text-uppercase"
                 >Contact Me</a
               >
             </div>
@@ -164,9 +176,8 @@
               I am familiar and experienced creating website using Laravel a
               server side php framework,React ,Javascript library, dbeaver which
               in database part and xampp, and all the CLI commands.<br />
-              For the reason of me not very skilled yet in the backend part.But
-              in order for me to learn, I have to spent time working on it. And
-              that is
+              I'm still not very skilled in the backend, so that's why I have to
+              put in the time to practice what I'm learning.
             </p>
           </div>
         </div>
@@ -360,17 +371,16 @@
                 </div>
                 <div class="col col-auto">
                   <button
-                    type="submit"
+                    type="button"
                     class="main-btn btn secondary-btn border-white mb-3 text-uppercase"
-                    onclick="openPopup()"
+                    id="getstarted"
                   >
                     Get Started
                   </button>
-                  <div class="popup" id="popup">
-                    <img src="../Portfolio/images/tick.png" alt="" />
+                  <div class="popup" id="messagepop">
                     <h2>Thank You!</h2>
                     <p>Your details has been successfully sent. Thanks!</p>
-                    <button type="button" onclick="closePopup()">OK</button>
+                    <button type="button" id="ok_btn">OK</button>
                   </div>
                 </div>
               </form>
@@ -418,15 +428,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let popup = document.getElementById("popup");
-
-      function openPopup() {
-        popup.classList.add("open-popup");
-      }
-      function closePopup() {
-        popup.classList.remove("open-popup");
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
